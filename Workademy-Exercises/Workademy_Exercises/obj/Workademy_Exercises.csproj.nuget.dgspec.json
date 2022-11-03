@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\avidakovic\\Desktop\\GIT\\workademy-exercises\\Workademy-Exercises\\Workademy_Exercises\\Workademy_Exercises.csproj": {}
+    "C:\\Users\\avidakovic\\Desktop\\Projekti_DotNet\\LEETCODE_PRACTICE\\workademy-exercises\\Workademy-Exercises\\Workademy_Exercises\\Workademy_Exercises.csproj": {}
   },
   "projects": {
-    "C:\\Users\\avidakovic\\Desktop\\GIT\\workademy-exercises\\Workademy-Exercises\\Workademy_Exercises\\Workademy_Exercises.csproj": {
+    "C:\\Users\\avidakovic\\Desktop\\Projekti_DotNet\\LEETCODE_PRACTICE\\workademy-exercises\\Workademy-Exercises\\Workademy_Exercises\\Workademy_Exercises.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\avidakovic\\Desktop\\GIT\\workademy-exercises\\Workademy-Exercises\\Workademy_Exercises\\Workademy_Exercises.csproj",
+        "projectUniqueName": "C:\\Users\\avidakovic\\Desktop\\Projekti_DotNet\\LEETCODE_PRACTICE\\workademy-exercises\\Workademy-Exercises\\Workademy_Exercises\\Workademy_Exercises.csproj",
         "projectName": "Workademy_Exercises",
-        "projectPath": "C:\\Users\\avidakovic\\Desktop\\GIT\\workademy-exercises\\Workademy-Exercises\\Workademy_Exercises\\Workademy_Exercises.csproj",
+        "projectPath": "C:\\Users\\avidakovic\\Desktop\\Projekti_DotNet\\LEETCODE_PRACTICE\\workademy-exercises\\Workademy-Exercises\\Workademy_Exercises\\Workademy_Exercises.csproj",
         "packagesPath": "C:\\Users\\avidakovic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\avidakovic\\Desktop\\GIT\\workademy-exercises\\Workademy-Exercises\\Workademy_Exercises\\obj\\",
+        "outputPath": "C:\\Users\\avidakovic\\Desktop\\Projekti_DotNet\\LEETCODE_PRACTICE\\workademy-exercises\\Workademy-Exercises\\Workademy_Exercises\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

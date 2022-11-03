@@ -2,7 +2,7 @@
 {
     //Write a method that recives one integer positive number and returns true
     //if number has the same value if it is read from right to left, otherwise it returns false
-    
+
     //1st NOVEMBER
     public static bool IsReadable(int num)
     {
@@ -10,7 +10,7 @@
         int reverse = 0;
         int step;
 
-        if(num < 0)
+        if (num < 0)
         {
             return false;
         }
@@ -21,7 +21,7 @@
             reverse = reverse * 10 + step;
             num = num / 10;
         }
-        if(initialNum == reverse)
+        if (initialNum == reverse)
         {
             return true;
         }
@@ -32,9 +32,9 @@
     {
         int count = 0;
         int PerfectSubString = 0;
-        for(int i = 0; i < str.Length; i++)
+        for (int i = 0; i < str.Length; i++)
         {
-            if(str[i].ToString()=="R")
+            if (str[i].ToString() == "R")
             {
                 count++;
                 if (count == 0)
@@ -42,16 +42,33 @@
                     PerfectSubString++;
                 }
             }
-            else if (str[i].ToString()=="S")
+            else if (str[i].ToString() == "S")
             {
                 count--;
-                if(count == 0)
+                if (count == 0)
                 {
                     PerfectSubString++;
                 }
             }
         }
         return PerfectSubString;
+    }
+
+    //3rd NOVEMBER
+    public static bool IsStringPangram(string str)
+    {
+        HashSet<char> Hashset = new HashSet<char>();
+        int count = 0;
+        char[] alphabet = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
+        foreach (char c in str)
+        {
+            Hashset.Add(c);
+        }
+        if (alphabet.Length == Hashset.Count)
+        {
+            return true;
+        }
+        return false;
     }
     private static void Main(string[] args)
     {
@@ -65,8 +82,13 @@
         //Console.ReadLine();
 
         //2nd NOVEMBER
-        string str = "RSRRSSRSRS";
-        Console.WriteLine(NumberOfPerfectStrings(str));
+        //string str = "RSRRSSRSRS";
+        //Console.WriteLine(NumberOfPerfectStrings(str));
+        //Console.ReadLine();
+
+        //3rd NOVEMBER
+        string str = "jackamazedafewgirlsbydroppingtheantiqueonyxvas";
+        Console.WriteLine(IsStringPangram(str));
         Console.ReadLine();
     }
 }
