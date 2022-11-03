@@ -30,65 +30,28 @@
     //2nd NOVEMBER
     public static int NumberOfPerfectStrings(string str)
     {
-        int countY = 0;
+        int count = 0;
         int PerfectSubString = 0;
-        if (str.StartsWith("R"))
+        for(int i = 0; i < str.Length; i++)
         {
-            for (int i = 0; i < str.Length; i++)
+            if(str[i].ToString()=="R")
             {
-                if (str[i].ToString() == "R")
+                count++;
+                if (count == 0)
                 {
-                    countY++;
-                    if (str[i + 1].ToString() == "S")
-                    {
-                        countY--;
-                        i++;
-                        if (countY == 0)
-                        {
-                            PerfectSubString++;
-                        }
-                    }
+                    PerfectSubString++;
                 }
-                else if (str[i].ToString() == "S")
+            }
+            else if (str[i].ToString()=="S")
+            {
+                count--;
+                if(count == 0)
                 {
-                    countY--;
-                    if (countY == 0)
-                    {
-                        PerfectSubString++;
-                    }
+                    PerfectSubString++;
                 }
             }
         }
-        if(str.StartsWith("S"))
-        {
-            for (int i = 0; i < str.Length; i++)
-            {
-                if (str[i].ToString() == "S")
-                {
-                    countY++;
-                    if (str[i + 1].ToString() == "R")
-                    {
-                        countY--;
-                        i++;
-                        if (countY == 0)
-                        {
-                            PerfectSubString++;
-                        }
-                    }
-                }
-                else if (str[i].ToString() == "R")
-                {
-                    countY--;
-                    if (countY == 0)
-                    {
-                        PerfectSubString++;
-                    }
-                }
-            }
-        }
-            return PerfectSubString;
-
-            
+        return PerfectSubString;
     }
     private static void Main(string[] args)
     {
