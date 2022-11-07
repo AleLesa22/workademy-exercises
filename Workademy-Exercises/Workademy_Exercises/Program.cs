@@ -69,6 +69,32 @@
         }
         return false;
     }
+
+    public static bool IsFristStringSubsequenceOfSecond(string firstString, string secondString)
+    {
+        HashSet<char> HashsetOne = new HashSet<char>();
+        HashSet<char> HashsetTwo = new HashSet<char>();
+
+        foreach(char c in secondString)
+        {
+            HashsetTwo.Add(c);
+        }
+
+        foreach(char c in firstString)
+        {
+            HashsetOne.Add(c);
+            if(HashsetTwo.Contains(c))
+            {
+                continue;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        return true;
+        
+    }
     private static void Main(string[] args)
     {
         //1st NOVEMBER
@@ -86,8 +112,15 @@
         //Console.ReadLine();
 
         //3rd NOVEMBER
-        string str = "jackamazedafewgirlsbydroppingtheantiqueonyxvas";
-        Console.WriteLine(IsStringPangram(str));
+        //string str = "jackamazedafewgirlsbydroppingtheantiqueonyxvas";
+        //Console.WriteLine(IsStringPangram(str));
+        //Console.ReadLine();
+
+        //4th NOVEMBER
+        string firstString = "abc";
+        string secondString = "ahbgdc";
+        Console.WriteLine(IsFristStringSubsequenceOfSecond(firstString, secondString));
         Console.ReadLine();
+
     }
 }
