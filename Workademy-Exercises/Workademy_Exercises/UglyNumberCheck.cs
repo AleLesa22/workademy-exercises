@@ -10,7 +10,7 @@ namespace Workademy_Exercises
     {
         public static bool Test(int num)
         {
-            if (num < 0)
+            if (num <= 0)
             {
                 return false;
             }
